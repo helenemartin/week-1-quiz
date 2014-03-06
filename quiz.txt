@@ -10,33 +10,49 @@ Ruby basics
 for instance [1,2,3] would be "an array containing three elements, the integer 1, the integer 2 and the integer 3"
 and "" would be "a blank string"
 
-1a) :crocodile
 
-1b) "145.73"
+1a) :crocodile a symbol
 
-1c) { :coffee => "cafe" }
+1b) "145.73" integer turned into a string?
 
-1d) [ :green, :eggs, :ham ]
+1c) { :coffee => "cafe" } hash with key or value key
 
-1e) ["tea", {"juice" => "orange"}]
+1d) [ :green, :eggs, :ham ] array with symbol (a collection?)(serialisation?)
+
+1e) ["tea", {"juice" => "orange"}] block
 
 2) Here is an array:
 array = ["Molly", "Greg", "Taz"]
 Write a line of ruby that appends the values "Jay" and "Mona" to the array.
+[“Molly”, “greg”, “Taz”}.push(“Jay”)
 
 3) Here is a hash:
 hash = { :cow => "Moo", :sheep => "Baah" }
 Write a line of ruby that replaces the value of the key :sheep with "Bleat".
+detect_sheep(“sheep”)
+=>”Bleat”
 
 4) The file number_converter.rb contains a method called convert_number that doesn't do anything.
 
 Replace the #??? comment inside it so that:
   if the argument passed is greater than 5, it returns 3 times the number,
   and if it is less than or equal to 5 it returns the number minus 3.
+number = 0
+
+if number>5
+  puts "#{number} less than 5"
+else number <= 5
+  puts "#{number greater than 7"
+
+end
+end
 
 5) Write a method that takes one argument (an array full of strings) and `puts` each word separately, but in uppercase.
+str = “pi, pa,po”
+puts str.split( /,/).uppercase
 
 6) What's the difference between an object and an instance?
+InStance never changes and is in Capital letter, an object is amendable
 
 Testing
 -------
@@ -45,36 +61,41 @@ Testing
 a) Write a test that checks greet('Ada') returns the string "HELLO ADA".
 b) Write a test that checks calculate(4, 5) returns 9.
 c) Write a test that checks calculate(5, 'horse') returns 5.
+DON”T KNOW HOW TO DO THHHHAT TIME RUNNED OU
 
 8) Explain the difference between the rspec methods let and subject.
+let and subject is fast to create put is not repeatable whereas RSPEC is lengthy and to tedious to create but is more “sustainable” and if it is good, you may use it for a while
 
 HTML, CSS and Javascript
 ------------------------
 
 8) In a sentance, describe:
 a) what is HTML?
-b) what is CSS?
-c) what is Javascript?
+ Hyper Marked Up Language for creating web pages on the World Wide Web
+b) what is CSS? 
+Cascading Style sheets, style sheets used to define how to present HTML elements
+c) what is Javascript? 
+object-oriented programming that interacts with the browser and makes HTML pages responsive
 
 9) State if the following lines are HTML, CSS,or Javascript:
 
-a) <p>Lorem Ipsum</p>
+a) <p>Lorem Ipsum</p> HTML
 
-b) console.log("Some words");
+b) console.log("Some words"); Javascript
 
-c) p { background-color: yellow }
+c) p { background-color: yellow } Css
 
-d) <table width="50%"></table>
+d) <table width="50%"></table> html
 
-e) <div id="index" class="small left"></div>
+e) <div id="index" class="small left"></div> html
 
 10) Describe the following Javascript objects, like you did for the first question:
 
-10a) 100.26
+10a) 100.26 integer
 
-10b) "Hello"
+10b) "Hello" string
 
-10c) [ "a", 4, null ]
+10c) [ "a", 4, null ] array
 
-10d) { height: "180cm" }
+10d) { height: "180cm" } block
 
